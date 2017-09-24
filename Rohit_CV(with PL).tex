@@ -1,0 +1,240 @@
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{hyperref}
+\usepackage{tocloft}
+\definecolor{dgray}{gray}{0.4}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=dgray
+}
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Rohit Naik Jarupla}
+& Ph: +91 9810422284 \\
+Junior Undergrad, Computer Science,
+& \href{mailto:cs1140224@cse.iitd.ernet.in}{cs1140224@cse.iitd.ernet.in}\\
+Indian Institute of Technology Delhi
+& \href{http://www.cse.iitd.ernet.in/~cs1140224/}{http://www.cse.iitd.ernet.in/$\sim$cs1140224/} \\
+\end{tabular*}
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ressubheading{Indian Institute of Technology, Delhi}{New Delhi, India}{Bachelor of Technology}{2014 - 2018}
+\ \\
+\ \\
+Relevant Courses: Artificial Intelligence, Machine Learning, Operating Systems, Analysis \& Design of Algorithms, Database Management Systems, Computer Networks, Parallel Programming
+
+\ \\
+\ressubheading{Hyderabad Public School, Begumpet}{Hyderabad, India}{ICSE Boards}{2002 - 2012}
+
+\ \\
+CGPA: 9.47
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Work Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item
+\ressubheading{Software Engineering Intern}{InStep Infosys, Bangalore}{\MYhref[black]{https://drive.google.com/open?id=0Bz73jm6QnK_sZ0Y4VmdqNnlha2c}{REST Framework for Named Entity Extraction}}{Summer 2017}
+\begin{itemize}
+\item Built a scalable RESTful API Service from scratch to perform NER (Named Entity Extraction, part of NLP) on a given text fragment or a document and return metrics such as Recall and Precision.
+\item Technology Used: Spacy to perform NER, Flask to setup server, Swagger and Flaskrest-plus to create API documentation.
+\end{itemize}
+
+\item
+\ressubheading{Web Developer Intern}{NextGen, Bangalore}{Dashboard Development in JavaScript}{Summer 2016}
+\begin{itemize}
+\item Designed, developed and delivered customized web based dashboards which enabled client companies to monitor their CSR projects. Technology used: HTML5/CSS3, JavaScript, jQuery, AJAX, JinqJs, Lodash, C3.js.
+\end{itemize}
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+
+\item
+\ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/OS-hohlabs}{Operating System - xv6}}{IIT Delhi}{course project under Prof. Sourav Bansal}{Jan 2017 - Present}
+\begin{itemize}
+\item Built a basic Operating System from scratch. Implemented basic I/O, co-routines, threads \& non-preemptive \& preemptive scheduling. Written in C and assembly language, x86.
+\end{itemize}
+
+\item
+\ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/TAK-Game-Player}{Game Player for TAK}}{IIT Delhi}{course project under Prof. Mausam}{July 2016 - Sep 2016}
+\begin{itemize}
+\item Designed a bot for the Real Time Strategy Game, TAK, using Adversarial Search.
+\item Implemented Depth-Limited MiniMax Tree Search, Alpha-Beta Pruning and Transposition Table. Used Genetic Algorithm to drastically improve the evaluation function. 
+\end{itemize}
+
+\item
+\ressubheading{Elevator Simulation Model}{IIT Delhi}{course project under Prof. Mausam}{Aug 2016 - Nov 2016}
+\begin{itemize}
+\item Designed an Elevator Simulator to optimize electricity and total waiting time.
+\item Modeled the problem as Markov Decision Process and implemented UCT and function approximation, along with memory optimization due to a huge state space.
+\end{itemize}
+
+\item
+\ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/Pong-v2.0}{Multiplayer Ping-Pong}}{IIT Delhi}{course project under Prof. Vinay Ribeiro}{March 2016 - May 2016}
+\begin{itemize}
+\item Wrote server and client programs for a multilayer ping pong game played over the network using Swing Java Library for GUI and Socket Class for networking (UDP Protocol). 
+\item Supports up-to 4 players simultaneously and disconnected/crashed player are replaced by bots to ensure continuity of the game.
+\end{itemize}
+
+\item
+\ressubheading{ARM Processor in VHDL}{IIT Delhi}{course project under Prof. Anshul Kumar}{Feb 2016 - May 2016}
+\begin{itemize}
+\item Implemented an ARM Processor with RAM, Register File and an ALU, involving Pipe-lined data-path and control-path with data-forwarding and a co-processor for branch prediction
+% \item Also implemented an intelligent data-forwarding mechanism and a co-processor for branch prediction.
+\end{itemize}
+
+
+\item
+\ressubheading{Custom Compiler in SML}{IIT Delhi}{course project under Prof. S. Arun Kumar}{Feb 2016 - March 2016}
+\begin{itemize}
+\item Developed compiler in the functional language, SML, given LL(1) form of grammar. Implemented a tokenizer and recursive descent parser to generate parse tree, which was converted into AST and intermediate representation code generation. Implemented a stack machine to run low level executable code generated by code generator.
+\end{itemize}
+
+% \item
+% \ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/Complaint-System-Django}{Complaint Management System (Android App)}}{IIT Delhi}{course project under Prof. Vinay Ribeiro}{June 2016 - April 2016}
+% \begin{itemize}
+% \item Portal to lodge, view or mark as resolved, a wide range of Complaints (Institute, Residential or Individual). Back-end Database Programmed in Django.
+% \item Complaints are prioritized on votes/comments and are sent to respective concerned Authorites/Departments (Carpentary, Electrician, Plumber, etc.) 
+% \end{itemize}
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Independent Projects}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item
+\ressubheading{Web Scraper in Python}{}{Python Programming}{July 2016 - Aug 2016}
+\begin{itemize}
+\item Built a Web Scraping Script in Python using the Modules Beautiful Soup and Selenium that scans a given course page and automatically downloads the Lecture Notes and Tutorials and saves them locally in appropriate format.
+\end{itemize}
+
+\item
+\ressubheading{Handwritten Digits Recognition Software}{}{Machine Learning}{October 2016}
+\begin{itemize}
+\item Designed a Neural-Network to decipher images of handwritten digits in MATLAB. Implemented the Back-propagation Algorithm to minimize the Cost Function.
+\end{itemize}
+\end{itemize}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \resheading{Relevant Courses}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \begin{itemize}
+% \item
+% \ressubheading{Computer Science}{}{Python Programming}{July 2016 - Aug 2016}
+% \begin{itemize}
+% \item Artificial Intelligence, Machine Learning, Operating System, Parallel Programming, Analysis \& Design of Algorithms, Database Management Systems, Computer Networks.
+% \end{itemize}
+
+% \item
+% \ressubheading{Handwritten Digits Recognition Software}{}{Machine Learning}{October 2016}
+% \begin{itemize}
+% \item Probability \& Stochastic Processes, 
+% \end{itemize}
+% \end{itemize}
+
+
+
+% \begin{itemize}
+% \item
+% \ressubheading{Computer Science}{IIT Delhi}{course project under Prof. Anshul Kumar}{Feb 2016 - May 2016}
+% \begin{itemize}
+% \item Artificial Intelligence, Machine Learning, Operating System, Parallel Programming, Analysis & Design of Algorithms, Database Management Systems, Computer Networks
+% \end{itemize}
+
+% \item
+% \ressubheading{Mathematics & Electrical Engineering}{IIT Delhi}{course project under Prof. Anshul Kumar}{Feb 2016 - May 2016}
+% \begin{itemize}
+% \item Probability & Stochastic Processes, Signals & systems, Linear Algebra & Differential Equations, Calculus
+% \end{itemize}
+% \end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Awards, Grants \& Honours}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+{KVPY National Scholarship}  & \textsc{2012} \\
+\emph{Secured All India Rank 5*} \\[5pt]
+ {National Science Olympiad 2012}  & \textsc{July 2012} \\
+\emph{Secured Rank 69} \\[5pt]
+ {Silver Medal for Academic Excellence } & \textsc{March 2012} \\[5pt]
+ 
+\end{tabular*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Designing and Coding Skills}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tabular*}{6in}{l@{\extracolsep{\fill}}l}
+{\bf Extensive}
+& \textsc{Java, JavaScript, Python, C++, PostgreSQL}\\[2pt]
+{\bf Intermediate}
+& \textsc{ARM/X86 Assembly, SML, VHDL, Matlab, HTML/CSS}\\[2pt]
+{\bf Basic}
+& \textsc{Shell Script, PHP} \\[-5pt]
+\end{tabular*}
+
+\end{document}

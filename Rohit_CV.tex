@@ -61,7 +61,7 @@
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 \textbf{\Large Rohit Naik Jarupla}
 & Ph: +91 9810422284 \\
-Junior Undergrad, Computer Science,
+Senior Undergrad, Computer Science,
 & \href{mailto:cs1140224@cse.iitd.ernet.in}{cs1140224@cse.iitd.ernet.in}\\
 Indian Institute of Technology Delhi
 & \href{http://www.cse.iitd.ernet.in/~cs1140224/}{http://www.cse.iitd.ernet.in/$\sim$cs1140224/} \\
@@ -72,10 +72,10 @@ Indian Institute of Technology Delhi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Education}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\ressubheading{Indian Institute of Technology Delhi}{New Delhi, India}{Bachelor of Technology}{2014 - 2018}
+\ressubheading{Indian Institute of Technology, Delhi}{New Delhi, India}{Bachelor of Technology}{2014 - 2018}
 \ \\
 \ \\
-Relevant Courses: Artificial Intelligence, Machine Learning, Operating Systems, Analysis \& Design of Algorithms, Database Management Systems, Computer Networks, Parallel Programming
+Relevant Courses: Cloud Computing, Artificial Intelligence, Machine Learning, Operating Systems, Analysis \& Design of Algorithms, Database Management, Computer Networks, Parallel Programming
 
 \ \\
 \ressubheading{Hyderabad Public School, Begumpet}{Hyderabad, India}{ICSE Boards}{2002 - 2012}
@@ -85,18 +85,26 @@ CGPA: 9.47
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Work Experience}
+\resheading{Internships}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{itemize}
 
 \item
-\ressubheading{Web Developer Intern}{NextGen, Bangalore}{Dashboard Development in JavaScript}{Summer 2016}
+\ressubheading{Software Engineer}{Infosys InStep, Bangalore}{\MYhref[black]{https://drive.google.com/open?id=0Bz73jm6QnK_sZ0Y4VmdqNnlha2c}{REST Framework for Named Entity Extraction}}{Summer 2017}
 \begin{itemize}
-\item Designed, developed and delivered a large number of customized web based dashboards (linked to the company?s proprietary product named p3 platform) which enabled client companies to monitor their CSR projects. Technology used: HTML5, CSS3, JavaScript, jQuery, Bootstrap, C3.js.
-\item Created a library to match the data model of p3 platform with the level of customization required for the web based dashboards. Integrated several libraries to provide for higher level data aggregation and transformation. Technology used: JavaScript, AJAX, JinqJs, Lodash, Loopback powered REST APIs.
+% \item Built a scalable RESTful API Service from scratch to perform NER (Named Entity Extraction, part of NLP) on a given text fragment or a document and return metrics such as Recall and Precision.
+\item Built a scalable RESTful API Service to perform NER, and return performance metrics such as Recall \& Precision, using custom models. To be used by Infosys and its clients
+\item Extensively experimented with Python Libraries RasaNLU, StanfordNER, MITIE, Spacy, etc.
+\item Used Spacy for NER, Flask for server management \& Flaskrest-Plus for API documentation
 \end{itemize}
 
+\item
+\ressubheading{Web Developer}{Goodera, Bangalore}{Dashboard Development in JavaScript}{Summer 2016}
+\begin{itemize}
+\item Developed Dashboards, which contain Cards \& interactive Charts \& Tables, to represent clientele's individual investment \& impact on the CSR sector
+\item Extensive use of JS and its Libraries (C3, Jinq, Moment, etc.) for data analysis and presentation \& AdminLTE Template for webpage layout
+\end{itemize}
 
 \end{itemize}
 
@@ -107,45 +115,68 @@ CGPA: 9.47
 \begin{itemize}
 
 \item
-\ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/OS-hohlabs}{Operating System - xv6}}{IIT Delhi}{course project under Prof. Sourav Bansal}{Jan 2017 - Present}
+\ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/OS-hohlabs}{Operating System - xv6}}{IIT Delhi}{course project under Prof. Sourav Bansal}{Jan 2017 - May 2017}
 \begin{itemize}
-\item This is an ongoing project, in which I build a basic Operating System from scratch. So far, I've implemented basic I/O, co-routines, threads \& non-preemptive \& preemptive scheduling.
-\item Written in C and assembly language, x86.
+\item Built a Shell based Kernel. Supported basic I/O \& preemptive \& non-preemptive threads using coroutines and fiber
+\item Implemented Leslie Lamport's SPSC queue to exchange messages between 2 cores. Written in C \& x86
 \end{itemize}
 
 \item
-\ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/ML-SVMs}{Facial Attractiveness Classifier}}{IIT Delhi}{course project under Prof. Parag Singla}{Feb 2017 - March 2017}
+\ressubheading{World Development Indicator}{IIT Delhi}{course project under Prof. Maya Ramanath}{March 2017 - April 2017}
 \begin{itemize}
-\item Used Support Vector Machines (SVMs) to build a facial attractiveness classifier, using both Linear Model as well as Guassian. Solved the SVM optimization Problem using a general Purpose convex optimization packages, CVXPy and LIBSVM
+\item Database Driven info-graphic website representing indicators of development from hundreds of countries
+\item Relational Database concepts, PostgreSQL, HTML/CSS, JS \& PHP were used
 \end{itemize}
 
 \item
-\ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/TAK-Game-Player}{Game Player for TAK}}{IIT Delhi}{course project under Prof. Mausam}{July 2016 - Sep 2016}
+\ressubheading{Parallel Genetic Solution to TSP}{IIT Delhi}{course project under Prof. Subodh Sharma}{Feb 2017 - March 2017}
 \begin{itemize}
-\item Designed a bot for the Real Time Strategy Game, TAK, using Adversarial Search.
-\item Implemented Depth-Limited MiniMax Tree Search, Alpha-Beta Pruning and Transposition Table. Used Genetic Algorithm to drastically improve the evaluation function. 
+\item Implemented a Parallel Solution to the Travelling Salesman Problem using OpenMP (C++)
+\item Experimented with Crossover (Genetic Algorithm) techniques - Partially Mapped Crossover, Cycle Crossover \& Edge Recombination Crossover
 \end{itemize}
 
 \item
-\ressubheading{Elevator Simulation Model}{IIT Delhi}{course project under Prof. Mausam}{Aug 2016 - Nov 2016}
+\ressubheading{Machine Learning}{IIT Delhi}{course projects under Prof. Parag Singla}{Jan 2017 - May 2017}
 \begin{itemize}
-\item Designed an Elevator Simulator to optimize electricity and total waiting time.
-\item Modeled the problem as Markov Decision Process and implemented UCT and function approximation, along with memory optimization due to a huge state space.
+\item Built a Neural Network to predict the final game outcome from a given intermediate board configuration of Connect-4
+\item Used Support Vector Machines (Linear \& Gaussian Kernels) to classify Attractive Faces
+\item Used Principal Component Analysis (PCA) in a Facial Recognition Software to greatly reduce the feature space
 \end{itemize}
 
 \item
-\ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/Pong-v2.0}{Multiplayer Ping-Pong}}{IIT Delhi}{course project under Prof. Vinay Ribeiro}{March 2016 - May 2016}
+\ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/TAK-Game-Player}{Artificial Game Player for TAK}}{IIT Delhi}{course project under Prof. Mausam}{July 2016 - Sept 2016}
 \begin{itemize}
-\item Wrote server and client programs for a multilayer ping pong game played over the network using Swing Java Library for GUI and Socket Class for networking (UDP Protocol). 
-\item Supports up-to 4 players simultaneously and disconnected/crashed player are replaced by bots to ensure continuity of the game.
+\item Designed a bot for the Real Time Strategy Game, TAK, using Adversarial Search (Depth-Limited MiniMax Search)
+\item Implemented Alpha-Beta Pruning and Transposition Table to improve time complexity and Genetic Algorithm to drastically improve the evaluation function.
 \end{itemize}
 
-\item
-\ressubheading{ARM Processor in VHDL}{IIT Delhi}{course project under Prof. Anshul Kumar}{Feb 2016 - May 2016}
-\begin{itemize}
-\item Implemented an ARM Processor with RAM, Register File and an ALU, involving Pipe-lined data-path and control-path with data-forwarding and a co-processor for branch prediction
-% \item Also implemented an intelligent data-forwarding mechanism and a co-processor for branch prediction.
-\end{itemize}
+% \item
+% \ressubheading{Elevator Simulation Model}{IIT Delhi}{course project under Prof. Mausam}{Aug 2016 - Nov 2016}
+% \begin{itemize}
+% \item Designed an Elevator Motion Simulator to optimize total electricity consumption and total waiting time
+% \item Modeled the Problem as a Markov Decision Process. Implemented the UCT Algorithm with function approximation \& memory optimization to manage such a huge state space
+% \end{itemize}
+
+% \item
+% \ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/Pong-v2.0}{Multiplayer Ping-Pong}}{IIT Delhi}{course project under Prof. Vinay Ribeiro}{April 2016 - May 2016}
+% \begin{itemize}
+% \item A P2P UDP-based online game with support of upto 4-players. Unavailable/crashed players are replaced by a bot
+% \item Used Java Socket Class for networking and Jave Swing Class for Graphics Designing
+% \end{itemize}
+
+% \item
+% \ressubheading{ARM Processor in VHDL}{IIT Delhi}{course project under Prof. Anshul Kumar}{Feb 2016 - May 2016}
+% \begin{itemize}
+% \item Implemented an ARM Processor with RAM, Register File and an ALU, involving Pipe-lined data-path and control-path with data-forwarding and a co-processor for branch prediction
+% % \item Also implemented an intelligent data-forwarding mechanism and a co-processor for branch prediction.
+% \end{itemize}
+
+
+% \item
+% \ressubheading{Custom Compiler in SML}{IIT Delhi}{course project under Prof. S. Arun Kumar}{Feb 2016 - March 2016}
+% \begin{itemize}
+% \item Developed compiler in the functional language, SML, given LL(1) form of grammar. Implemented a tokenizer and recursive descent parser to generate parse tree, which was converted into AST and intermediate representation code generation. Implemented a stack machine to run low level executable code generated by code generator.
+% \end{itemize}
 
 % \item
 % \ressubheading{\MYhref[black]{https://github.com/RohitNaikJ/Complaint-System-Django}{Complaint Management System (Android App)}}{IIT Delhi}{course project under Prof. Vinay Ribeiro}{June 2016 - April 2016}
@@ -155,23 +186,24 @@ CGPA: 9.47
 % \end{itemize}
 
 \end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Independent Projects}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{itemize}
-\item
-\ressubheading{Web Scraper in Python}{}{Python Programming}{July 2016 - Aug 2016}
-\begin{itemize}
-\item Built a Web Scraping Script in Python using the Modules Beautiful Soup and Selenium that scans a given course page and automatically downloads the Lecture Notes and Tutorials and saves them locally in appropriate format.
-\end{itemize}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \resheading{Independent Projects}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\item
-\ressubheading{Handwritten Digits Recognition Software}{}{Machine Learning}{October 2016}
-\begin{itemize}
-\item Designed a Neural-Network to decipher images of handwritten digits in MATLAB. Implemented the Back-propagation Algorithm to minimize the Cost Function.
-\end{itemize}
-\end{itemize}
+% \begin{itemize}
+% \item
+% \ressubheading{Web Scraper in Python}{}{Python Programming}{July 2016 - Aug 2016}
+% \begin{itemize}
+% \item Built a Web Scraping Script in Python using the Modules Beautiful Soup and Selenium that scans a given course page and automatically downloads the Lecture Notes and Tutorials and saves them locally in appropriate format.
+% \end{itemize}
+
+% \item
+% \ressubheading{Handwritten Digits Recognition Software}{}{Machine Learning}{October 2016}
+% \begin{itemize}
+% \item Designed a Neural-Network to decipher images of handwritten digits in MATLAB. Implemented the Back-propagation Algorithm to minimize the Cost Function.
+% \end{itemize}
+% \end{itemize}
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \resheading{Relevant Courses}
@@ -208,6 +240,21 @@ CGPA: 9.47
 % \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{IIT Delhi Thesis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item
+\ressubheading{Software Defined Networks \& Virtualization}{IIT Delhi}{thesis under Prof. Suresh Chand Gupta}{July 2017 - Present}
+\begin{itemize}
+\item Adapt inspiring features of various reliable \& scalable cloud solutions like Azure, AWS \& GCP to Baadal (IITD's Cloud Service)
+\item Specifically, use modern \& innovative SDN \& NFV implementations of these services to improve Baadal
+\end{itemize}
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \resheading{Awards, Grants \& Honours}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
@@ -215,12 +262,14 @@ CGPA: 9.47
 \emph{Secured All India Rank 5*} \\[5pt]
  {National Science Olympiad 2012}  & \textsc{July 2012} \\
 \emph{Secured Rank 69} \\[5pt]
+ {National Cyber Olympiad 2011}  & \textsc{July 2011} \\
+\emph{Secured Rank 252} \\[5pt]
  {Silver Medal for Academic Excellence } & \textsc{March 2012} \\[5pt]
  
 \end{tabular*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\resheading{Designing and Coding Skills}
+\resheading{Programming Skills}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{tabular*}{6in}{l@{\extracolsep{\fill}}l}
